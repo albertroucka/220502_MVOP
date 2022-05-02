@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:views="clr-namespace:_220502_MVOP"
+       x:Class="_220502_MVOP.ShellPage"
+       BackgroundColor="Black"
+       Shell.TabBarBackgroundColor="WhiteSmoke"
+       Shell.TabBarTitleColor="Black">
+
+    <Shell.FlyoutHeader>
+        <Frame BackgroundColor="Black">
+            <Label Text="Tělesa naší sluneční soustavy" TextColor="Gold" Margin="30" FontSize="25"/>
+        </Frame>
+    </Shell.FlyoutHeader>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Úvod" Icon="home.png">
+            <views:HomePage/>
+        </ShellContent>
+        <ShellContent Title="Planety" Icon="planet.png">
+            <views:PlanetPage/>
+        </ShellContent>
+        <ShellContent Title="Přidat" Icon="add.png">
+            <views:AddPage/>
+        </ShellContent>
+        <ShellContent Title="O aplikaci" Icon="about.png">
+            <views:AboutPage/>
+        </ShellContent>
+    </FlyoutItem>
+</Shell>

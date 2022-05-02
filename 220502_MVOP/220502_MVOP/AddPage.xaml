@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_220502_MVOP.AddPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lb_add_title" Grid.Row="0"  Text="Přidání nové planety" TextColor="Black" FontSize="30" Margin="10"/>
+        <Entry x:Name="ent_planet_name" Grid.Row="1" Placeholder="Zadejte název planety" Margin="10"/>
+        <Entry x:Name="ent_planet_average" Grid.Row="2" Placeholder="Zadejte průměr planety" Margin="10"/>
+        <Entry x:Name="ent_planet_temperature" Grid.Row="3" Placeholder="Zadejte teplotu planety" Margin="10"/>
+        <Entry x:Name="ent_planet_numberofmoons" Grid.Row="4" Placeholder="Zadejte počet měsíců planety" Margin="10"/>
+        <Entry x:Name="ent_planet_description" Grid.Row="5" Placeholder="Zadejte popis planety" Margin="10"/>
+        <Button x:Name="btn_add" Grid.Row="6" Text="Přidat planetu" FontSize="20" TextColor="Gold" BackgroundColor="Black" CornerRadius="40" Margin="10,0" Clicked="btn_add_Clicked"/>
+    </Grid>
+</ContentPage>

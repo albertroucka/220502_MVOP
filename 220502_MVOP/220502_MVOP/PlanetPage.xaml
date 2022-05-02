@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_220502_MVOP.PlanetPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <ListView x:Name="lv_planets" Grid.Row="0" IsPullToRefreshEnabled="True" ItemSelected="lv_planets_ItemSelected" Margin="20">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding title}" FontSize="20" TextColor="Black" VerticalOptions="CenterAndExpand" Margin="10,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label x:Name="lb_planet_title" Grid.Row="1" Text="Název planety" FontSize="20" TextColor="Black" Margin="20,0,20,0"/>
+        <Label x:Name="lb_planet_average" Grid.Row="2" Text="Průměr planety" FontSize="20" TextColor="Black" Margin="20,0,20,0"/>
+        <Label x:Name="lb_planet_temperature" Grid.Row="3" Text="Teplota planety" FontSize="20" TextColor="Black" Margin="20,0,20,0"/>
+        <Label x:Name="lb_planet_numberofmoons" Grid.Row="4" Text="Počet měsíců planety" FontSize="20" TextColor="Black" Margin="20,0,20,0"/>
+        <ScrollView  Grid.Row="5">
+            <Label x:Name="lb_planet_description" Text="Popis" FontSize="20" TextColor="Black" Margin="20,0,20,0"/>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

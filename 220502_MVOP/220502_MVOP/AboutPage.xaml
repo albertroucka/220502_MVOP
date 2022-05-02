@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_220502_MVOP.AboutPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Tuto aplikaci vytvořil Albert Roučka v rámci MVOPu Programování a vývoj aplikací v roce 2022" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="20"/>
+    </Grid>
+</ContentPage>
